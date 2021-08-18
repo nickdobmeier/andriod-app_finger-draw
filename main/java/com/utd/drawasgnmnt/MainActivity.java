@@ -1,8 +1,5 @@
 // Dobmeier
 
-// In this file, the XML is inflated (including the custom Follow-View class), and also creates a listener for the SeekBar,
-//    and click-listener for all of the color buttons, and another click-listener for the undo button
-
 package com.utd.drawasgnmnt;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -63,22 +60,18 @@ public class MainActivity extends AppCompatActivity
     {
         Button buttonClicked = (Button) view;
         if(buttonClicked.hashCode() == redButton.hashCode()){
-            //System.out.println("red");
             followView.setCurrentCircleColor(Color.rgb(0xFF, 0x00, 0x00));  // hex-code for RED
         }
 
         else if(buttonClicked.hashCode() == greenButton.hashCode()){
-            //System.out.println("green");
             followView.setCurrentCircleColor(Color.rgb(0x00, 0xFF, 0x00));  // hex-code for GREEN
         }
 
         else if(buttonClicked.hashCode() == blueButton.hashCode()){
-            //System.out.println("blue");
             followView.setCurrentCircleColor(Color.rgb(0x00, 0x00, 0xFF));  // hex-code for BLUE
         }
 
         else if(buttonClicked.hashCode() == blackButton.hashCode()){
-            //System.out.println("black");
             followView.setCurrentCircleColor(Color.BLACK);
         }
     }
